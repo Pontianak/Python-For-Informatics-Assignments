@@ -1,5 +1,4 @@
 # Python-For-Informatics
-------------------------
 Collection of my coding assignments for the book Python For Informatics by Dr. Charles "Chuck" Russell Severance.
 
 Copyright
