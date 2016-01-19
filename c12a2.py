@@ -37,7 +37,7 @@ while True:
 cRepeat = 0
 cPos = 0
 
-print '\nProcessing:' , url
+print '\nLooking up Web Data... please wait.\n\nCompleted:' , url
 
 while cRepeat < repeat:
     html = urllib.urlopen(url) .read()
@@ -51,7 +51,7 @@ while cRepeat < repeat:
             cPos = 0
             cRepeat += 1
             if cRepeat < repeat:
-                print 'Processing:' , url
+                print 'Completed:' , url
             else:
                 print 'Last URL:' , url
             break
