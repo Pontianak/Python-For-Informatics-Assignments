@@ -9,11 +9,13 @@ os.system('cls')
 print 'Sample Problem: https://pr4e.dr-chuck.com/tsugi/mod/python-data/data/known_by_Fikret.html'
 print 'Actual Problem: https://pr4e.dr-chuck.com/tsugi/mod/python-data/data/known_by_Tymon.html'
 
+error = 'Error: Invalid Entry'
+
 while True:
     try:
         uInput = int(raw_input('\nEnter # Sample "1" or Actual "2"\n> '))
     except:
-        print 'Error: Enter a number 1 or 2'
+        print error
         continue
     if uInput == 1:
         url = 'https://pr4e.dr-chuck.com/tsugi/mod/python-data/data/known_by_Fikret.html'
@@ -28,10 +30,10 @@ while True:
         repeat = 7
         break
     elif uInput < 1:
-        print 'Error: Invalid Entry\nEnter a number 1 or 2'
+        print error
         continue
     elif uInput > 2:
-        print 'Error: Invalid Entry\nEnter a number 1 or 2'
+        print error
         continue
 
 cRepeat = 0
